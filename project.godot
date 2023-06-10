@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="LightRays"
+run/main_scene="res://_entry_scene.tscn"
+config/features=PackedStringArray("4.0", "C#", "GL Compatibility")
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/resizable=false
+window/stretch/mode="viewport"
+
+[dotnet]
+
+project/assembly_name="LightRays"
+
+[internationalization]
+
+locale/translation_remaps={}
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.14902, 0.415686, 0.415686, 1)
